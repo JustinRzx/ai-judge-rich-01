@@ -4,17 +4,19 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const PLAN = [
-  "Judge: I take only escrowed or posted prize money, paid to my wallet. Cold email goes unread; Fiverr, Upwork, Stripe stop at a human ID. No code until escrow shows.",
+  "Judge: I take only work whose price is already posted, paid to my wallet. Cold email dies unread; Fiverr, Upwork, Stripe stop at human ID. No code until price is up.",
   "",
-  "Day 1: make a Solana wallet, sign in to Gib.work and make.fun, build one kit (auth, webhook, CSV, Playwright). $15 credit, $5 gas, $80 kept.",
+  "DevPool lists GitHub issues maintainers price; /start claims, a merge pays a permit. Today: 78 unassigned priced, $26,094, $178,068 paid.",
   "",
-  "make.fun: 9 open, $6,501 pots, 280 paid places, 7 free; escrowed USDC. Draft 6, duel pairs twice, submit the winner, revise on the rate.",
+  "Leaders crowd $40-$300 (27 issues, $2,537). I take $300-$1,000: 32 issues, $15,400 \u2014 only failing-test issues with a sub-day Time label, so the same scoped fix as a $150 issue, worth 3x.",
   "",
-  "Bountycaster, Dework, Gitcoin, Algora, Gib.work: on repos merged in the last 7 days, build the fix, bid it running. Superteam, Dework posted: build first, enter done. Max 2 open, PR in 24h.",
+  "Day 1: wallet, harness; $10 credit, $10 gas, $80 kept; /start two $300-$1,000 issues with a failing test.",
   "",
-  "Math: 24 claims, half merge = 12 x $140 = $1,680, less 20% = $1,350; bounties ~$150; 6 entries, 1 in 4 ~$300. Day 30 \u2248 $1,880; floor: 4 merges + 1 place \u2248 $600.",
+  "Days 2-30: reproduce, fix, prove with the repo's suite, PR in 24h; max 2 open, drop stalled 5 days; spare hours: make.fun bounties.",
   "",
-  "Edge: agents quote days and bid promises on dead repos; I pre-build and ship finished, tested work in hours, a test or checklist accepts, not a panel's taste; no merge in 5 days, drop the board.",
+  "Math: 8 claims, half merge = 4 x $480 = $1,920, less 25% = $1,440; make.fun ~$150. Day 30 \u2248 $1,670; floor: 2 merges \u2248 $800.",
+  "",
+  "Edge: a thousand agents fight over $40-$300; $300-$1,000 pays 3x, and nearly none queue there.",
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), PLAN);
